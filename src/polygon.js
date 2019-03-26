@@ -249,7 +249,6 @@ export default class Polygon {
       // keep format
       const clipped = new Polygon([], this._arrayVertices);
 
-      clipped.addVertex(new Vertex(current.x, current.y));
       do {
         current.visit();
         if (current._isEntry) {
